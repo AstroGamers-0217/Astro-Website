@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+} */
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body{
+    background-image: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+/* HEADER  */
+
+header {
+    height: 70px;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo-img {
+    height: 100px;
+  width: auto;
+  padding-left: 15px;
+  padding-top: 5px;
+  filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+  position: fixed;
+  z-index: 3;
+}
+
+.menu-icon {
+    font-size: 1em;
+  top: 1000px;
+  color: #ac1818;
+  line-height: 0px;
+}
+
+/* NAVBAR MENU */
+nav {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .5);
+    top: 70px;
+    left:0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    
+}
+nav ul li a:hover, nav ul li a:focus {
+    border-bottom: 2px solid rgb(255, 255, 255) ;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 300px;
+    padding: 15px 0;
+    transition: all 0.5s ease-in;
+}
+
+/* FULL SCREEN NAVBAR */
+
+@media (min-width: 768px) { 
+    .menu-wrap label {
+        display: none;
+    }
+    nav {
+        position: fixed;
+        top: 00px;
+        right: 10px;
+        background-color: transparent;
+        z-index: 1;
+        color: white;
+        position: fixed;  
+        
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 10px 0;
+        text-align: right;
+        align-items: center;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-right: 100px;
+        font-size: 2.5emS;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
+}
+
+/* body */
+.bcontent{
+    padding: 0 10%;
+    height: auto;
+}
+
+/* MENU BLACK */
+.black{
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+/* box */
+
+.box{
+    box-shadow:
+  0 2.6px 1.6px rgba(255, 255, 255, 0.052),
+  0 5.4px 3.9px rgba(255, 255, 255, 0.081),
+  0 8.6px 7.3px rgba(255, 255, 255, 0.103),
+  0 13px 13px rgba(255, 255, 255, 0.126),
+  0 20.7px 24.2px rgba(255, 255, 255, 0.152),
+  0 43px 58px rgba(255, 255, 255, 0.21)
+;
+    width: 80%;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+/* contact */
+
+.container{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container .text{
+    font-size: 2vw;
+}
+
+.form-row{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.form-row .input-data{
+    display: block;
+}
+
+.input-data input{
+    margin-left: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.input-data input,textarea{
+    width: 50%;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.input-data .label{
+    vertical-align: top;
+}
+
+.input-data .button{
+    width: 15%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* ---- footer SECTION ----- */
+
+footer{
+    /* background: rgb(37, 37, 37); */
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top: 4px;
+    color: white;
+    
+}
+
+/* social icons */
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.socials li{
+    margin: 0 7px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+
+.socials a i{
+    font-size: 2.5rem;
+    transition: color .4s ease;
+
+}
+
+.socials a:hover i{
+    color: rgb(255, 255, 0);
+}
+
+/* COPYRIGHT BAR */
+
+
+.footer-bottom{
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+font-size: 17px;
+word-spacing: 2px;
+text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-decoration: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
