@@ -41,27 +41,24 @@ header {
 }
 
 .logo-img {
-  height: 90px;
-  width: auto;
+  width: 40%;
   padding-left: 15px;
   padding-top: 5px;
   filter: drop-shadow(0 0 2px rgb(255, 255, 255));
-  position: fixed;
   z-index: 3;
 }
 
 .menu-icon {
   font-size: 50px;
-  top: 1000px;
   color: #ac1818;
-  line-height: 0px;
+  line-height: 100px;
 }
 
 /* navbar */
 
 nav {
   position: absolute;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 70px;
   left:0;
   width: 100%;
@@ -74,11 +71,13 @@ nav ul {
   overflow: hidden;
   transition: all 0.5s;
 }
+
 nav ul li {
   padding: 0px;
   font-size: 20px;
   text-align: center;
 }
+
 nav ul li a {
   display: inline-block;
   padding: 15px;
@@ -107,6 +106,12 @@ nav ul li a:hover, nav ul li a:focus {
   .menu-wrap label {
       display: none;
   }
+
+  .logo-img{
+    position: fixed;
+    width: 15%;
+  }
+
   nav {
       top: 0px;
       right: 10px;
