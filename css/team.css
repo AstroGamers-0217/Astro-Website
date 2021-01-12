@@ -279,6 +279,26 @@ footer{
     -webkit-text-fill-color: transparent;
 }
 
+@media all and (max-width: 500px) {
+    .footer-content ul li {
+      margin: 0 10px;
+    }
+  
+    .footer-content ul li .fa {
+      font-size: 25px;
+      line-height: 50px;
+    }
+  
+    .footer-content ul li a {
+      width: 70px;
+      height: 70px;
+    }  
+  
+    .footer-content ul li:hover .fa {
+      font-size: 45px;
+    }
+  }
+
 /* COPYRIGHT BAR */
 
 

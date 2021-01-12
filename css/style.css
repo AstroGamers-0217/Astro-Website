@@ -322,7 +322,7 @@ footer{
 
 @media all and (max-width: 500px) {
   .footer-content ul li {
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .footer-content ul li .fa {

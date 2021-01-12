@@ -246,9 +246,48 @@ footer{
 
 }
 
-.socials a:hover i{
-    color: rgb(255, 255, 0);
+.fa-twitter:hover{
+    color: #55acee;
 }
+
+.fa-facebook:hover{
+    color:#3b5999;
+}
+
+.fa-linkedin-square:hover{
+    color:#0077bb;
+}
+
+.fa-youtube-play:hover{
+    color: #FF0000;
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media all and (max-width: 500px) {
+    .footer-content ul li {
+      margin: 0 10px;
+    }
+  
+    .footer-content ul li .fa {
+      font-size: 25px;
+      line-height: 50px;
+    }
+  
+    .footer-content ul li a {
+      width: 70px;
+      height: 70px;
+    }  
+  
+    .footer-content ul li:hover .fa {
+      font-size: 45px;
+    }
+  }
 
 /* COPYRIGHT BAR */
 
