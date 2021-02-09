@@ -130,7 +130,7 @@ nav ul li a:hover, nav ul li a:focus {
       display: inline-flex;
       padding-right: 80px;
       font-size: 23px;
-      filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+      filter: drop-shadow(0 0 10px rgb(112, 112, 112));
   }
 }
 
@@ -317,7 +317,7 @@ footer{
 }
 
 .footer-content ul li:hover:nth-child(3) a {
-  background: #0077bb;
+  background: #bb0000;
 }
 
 .footer-content ul li:hover:nth-child(4) a {
