@@ -281,7 +281,7 @@ footer{
 }
 
 .footer-content ul li .fa {
-  font-size: 35px;
+  font-size: 27px;
   color: black;
   line-height: 100px;
   transition: 500ms;
@@ -289,8 +289,8 @@ footer{
 
 .footer-content ul li a {
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   transition: 500ms;
@@ -305,7 +305,7 @@ footer{
 
 .footer-content ul li:hover .fa {
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .footer-content ul li:hover:nth-child(1) a {
@@ -327,21 +327,21 @@ footer{
 
 @media all and (max-width: 500px) {
   .footer-content ul li {
-    margin: 0 10px;
+    margin: 0 8px;
   }
 
   .footer-content ul li .fa {
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 40px;
   }
 
   .footer-content ul li a {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }  
 
   .footer-content ul li:hover .fa {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
