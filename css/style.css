@@ -17,8 +17,10 @@ html{
 }
 
 body{
-  background-image: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg');
-  background-attachment: fixed;
+  background: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -49,9 +51,10 @@ header {
 }
 
 .menu-icon {
-  font-size: 50px;
-  color: #ac1818;
+  font-size: 0px;
+  color: #b60000cb;
   line-height: 100px;
+  align-items: center;
 }
 
 /* navbar */
@@ -59,7 +62,7 @@ header {
 nav {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 70px;
+  top: 80px;
   left:0;
   width: 100%;
   z-index: 3;
@@ -155,7 +158,7 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
 
 .box{
     margin: auto;
-    width: 80%;
+    width: 50%;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -214,7 +217,7 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
   .card .card_title button{
     border-radius: 2px;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 15px;
     height: 100%;
     padding: 0px 20px;
     border: 2px solid #FFD55A;

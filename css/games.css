@@ -203,20 +203,111 @@ nav ul li a:hover, nav ul li a:focus {
 
 /* games */
 
-.games-wrapper{
-  display: flex; 
-  align-content: center;
+/* table */
+table {
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  vertical-align: center;
+  table-layout: fixed;
+  color: white;
+  
 }
 
-.zigzag{
-  display: flex; 
-  padding-left: 15%;
+table caption {
+  font-size: 1.5em;
+  margin: .10em 0 1.4em;
 }
 
-.icon img{
-  width: 20%;
-  border-radius: 15px;
+table tr {
+  /* background-color: #f8f8f8; */
+  border-bottom: 1px solid #ddd;
+  padding: .55em;
+  
 }
+
+table tr td img{
+  width: 10vh;
+  border-radius: 20%;
+}
+
+table th,
+table td {
+  padding: .7em;
+  text-align: center;
+  color: white;
+  
+}
+
+table th {
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  
+ }
+
+@media screen and (max-width: 600px) {
+  table {
+    vertical-align: center;
+    color: white;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 1em;
+    position: absolute;
+    width: 1px;
+    align-items: center;
+  }
+  
+  table tr {
+    /* border-bottom: 3px solid #ddd; */
+    display: block;
+    margin-bottom: 1em;
+    
+  }
+
+  table td {
+    /* border-bottom: 1px solid #ddd; */
+    display: block;
+    font-size: 1em;
+    text-align: right;
+    
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+  
+  table td:last-child {
+    /* border-bottom: 2px solid white; */
+  }
+}
+
+table caption h1{
+  color: white;
+}
+
+table tr td a img{
+  width: 20vh;
+}
+
+
+
 
 /* ---- footer SECTION ----- */
 
