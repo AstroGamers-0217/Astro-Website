@@ -175,6 +175,10 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
 ;
 }
 
+.box h1{
+  font-size: 4.7em;
+}
+
 /* card container */
 .cards-list {
     z-index: -1;
@@ -184,7 +188,7 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
   }
 
   .card {
-    margin: 40px;
+    margin: 50px;
     width: 100%;
     height: auto;
     transition: 0.4s;
@@ -206,41 +210,57 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
   .card .card_title{
     text-align: center;
     border-radius: 2px;
-    font-size: 20px;
     height: 50px;
     width: auto;
-    padding: 0px 20px;
+    padding: 0;
     align-items: center;
     justify-content: center;
   }
 
   .card .card_title button{
     border-radius: 2px;
-    margin-top: 20px;
-    font-size: 15px;
+    font-size: 1.7rem;
     height: 100%;
-    padding: 0px 20px;
+    width: auto;
+    padding: 10px;
     border: 2px solid #FFD55A;
     border-radius: 10px;
     background-color: transparent;
     color: #FFD55A;
   }
 
+  .card .card_title button a{
+    text-decoration: none;
+    color: #FFD55A;
+  }
+
+
+
   .card button:hover{
     background: #FFD55A;
-    color: black;
+    color: rgb(255, 255, 255);
     cursor: pointer;
   }  
 
 /* mobile - cards */
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 650px) {
     .card-list {
-      /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
     }
 
+    .card{
+      margin: 20px;
+    }
+    .box{
+      width: 90%;
+    }
+
+    .box center h1{
+      font-size: 3em;
+    }
+
     .card .card_title button{
-      font-size: 17px;
+      font-size: 1rem;
     }
   }
 

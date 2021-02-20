@@ -151,7 +151,7 @@ nav ul li a:hover, nav ul li a:focus {
 /* games */
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   /* height: 400px; */
   position: relative;
   overflow: hidden;
@@ -219,17 +219,16 @@ nav ul li a:hover, nav ul li a:focus {
 
 .flex-item {
   background: rgb(148, 148, 148);
-  /* padding: 5px; */
-  width: 350px;
-  height: 550px;
-  margin-top: 10px;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
   text-align: center;
   backdrop-filter: blur(15px);
   
 }
 
 .flex-item img{
-  width: inherit;
+  width: 100%;
 }
 
 
@@ -335,7 +334,11 @@ background: linear-gradient(#400080, transparent),
 }  
 
 .footer-content ul li:hover .fa {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.footer-bottom p{
+  font-size: 10px;
 }
 }
 
