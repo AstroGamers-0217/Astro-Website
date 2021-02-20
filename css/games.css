@@ -219,8 +219,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 .flex-item {
   background: rgb(148, 148, 148);
-  width: 250px;
-  height: 320px;
+  width: 300px;
+  height: 350px;
   margin: 10px;
   text-align: center;
   backdrop-filter: blur(15px);
