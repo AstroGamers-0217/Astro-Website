@@ -37,13 +37,44 @@ body{
     filter: invert(1) hue-rotate(60deg);
 } */
 
-/* ----- HEADER SECTION ----- */
+/* menu */
+
+.example5 .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.example5 .navbar-brand>img {
+  padding: 7px 14px;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+} 
+
+/* ----- HEADER SECTION -----
 header {
   height: 70px;
   /* background-image: white; */
-}
+/* } */
 
-.menu-wrap {
+/* .menu-wrap {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
@@ -63,11 +94,11 @@ header {
   line-height: 100px;
   align-items: center;
   
-}
+} */
 
 /* navbar */
 
-nav {
+/* nav {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   top: 80px;
@@ -109,11 +140,11 @@ nav ul li a:hover, nav ul li a:focus {
   max-height: 300px;
   padding: 5px 0;
   transition: all 0.5s ease-in;
-}
+} */
 
 /* FULL SCREEN NAVBAR */
 
-@media (min-width: 1150px) { 
+/* @media (min-width: 1150px) { 
   .menu-wrap label {
       display: none;
   }
@@ -143,7 +174,7 @@ nav ul li a:hover, nav ul li a:focus {
       font-size: 23px;
       filter: drop-shadow(0 0 10px rgb(112, 112, 112));
   }
-}
+} */ */
 
 /* MENU BLACK */
 .black{
@@ -185,7 +216,7 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
 
 .box h1{
   font-size: 4.7em;
-  font-family: 'chalkboard_seregular';
+  /* font-family: 'chalkboard_seregular'; */
 }
 
 /* card container */
