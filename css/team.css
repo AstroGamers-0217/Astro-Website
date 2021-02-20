@@ -152,7 +152,7 @@ nav ul li a:hover, nav ul li a:focus {
 .heading{
     color: white;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 15px;
     margin-bottom: 15px;
     letter-spacing: 2px;
@@ -185,7 +185,6 @@ nav ul li a:hover, nav ul li a:focus {
 
 .container .card .imgBx{
     max-width: 220px;
-
 }
 
 .container .card .imgBx img{
@@ -220,8 +219,24 @@ nav ul li a:hover, nav ul li a:focus {
         width: 100%;
     }
 
+    .container .card{
+      width: 405px;
+      height: 179px;
+    }
+
+    .container .card .imgBx{
+      max-width: 150px;
+  }
+
+  .content{
+    font-size: 70%;
+  }
+
+
+
 }
 
+/* team cards socials */
 
 
 /* ---- footer SECTION ----- */
