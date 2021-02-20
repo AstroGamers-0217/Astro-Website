@@ -323,7 +323,7 @@ footer{
     linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .footer-content ul li {
     margin: 0 8px;
   }
