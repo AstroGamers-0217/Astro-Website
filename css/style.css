@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: chalkboard_seregular;
 }
 
 /* css variables */
@@ -73,7 +74,6 @@ nav {
   left:0;
   width: 100%;
   z-index: 3;
-  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul {
@@ -81,14 +81,12 @@ nav ul {
   max-height: 0px;
   overflow: hidden;
   transition: all 0.5s;
-  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul li {
   padding: 0px;
   font-size: 20px;
   text-align: center;
-  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul li a {
@@ -97,7 +95,6 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.05em;
-  /* font-family: chalkboard_seregular; */
 }
 
 nav ul li a:hover, nav ul li a:focus {
