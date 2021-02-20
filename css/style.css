@@ -16,11 +16,17 @@ html{
   overflow-x: hidden;
 }
 
-body{
+/* body{
   background: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+} */
+
+body{
+  background-image: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg');
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -55,6 +61,7 @@ header {
   color: #b60000cb;
   line-height: 100px;
   align-items: center;
+  
 }
 
 /* navbar */
@@ -66,6 +73,7 @@ nav {
   left:0;
   width: 100%;
   z-index: 3;
+  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul {
@@ -73,12 +81,14 @@ nav ul {
   max-height: 0px;
   overflow: hidden;
   transition: all 0.5s;
+  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul li {
   padding: 0px;
   font-size: 20px;
   text-align: center;
+  /* font-family: 'chalkboard_seregular'; */
 }
 
 nav ul li a {
@@ -87,6 +97,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.05em;
+  /* font-family: chalkboard_seregular; */
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -177,6 +188,7 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
 
 .box h1{
   font-size: 4.7em;
+  font-family: 'chalkboard_seregular';
 }
 
 /* card container */
@@ -226,21 +238,20 @@ filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
     border: 2px solid #FFD55A;
     border-radius: 10px;
     background-color: transparent;
-    color: #FFD55A;
+    color: #ffd55a;
   }
 
   .card .card_title button a{
     text-decoration: none;
     color: #FFD55A;
+    
   }
-
-
 
   .card button:hover{
     background: #FFD55A;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
-  }  
+  }
 
 /* mobile - cards */
   @media all and (max-width: 650px) {

@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'chalkboard_seregular';
-    src: url('chalkboardse-regular-webfont.woff2') format('woff2'),
-         url('chalkboardse-regular-webfont.woff') format('woff');
+    src: url('/font/chalkboardse-regular-webfont.woff2') format('woff2'),
+         url('/font/chalkboardse-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
