@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: chalkboard_seregular; */
-  font-family: 'Mulish', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 /* .dark-mode {
@@ -20,6 +20,7 @@ body {
   background-image: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg');
   background-attachment: fixed;
   background-size: cover;
+  background-color: #2F2F2F;
 }
 
 /* ---------------- Nav Bar ------------------------- */
@@ -277,6 +278,7 @@ footer {
 .footer-bottom p {
   font-size: 17px;
   word-spacing: 2px;
+  text-shadow: 1px 1px 4px rgb(196, 196, 196);
   text-transform: capitalize;
 }
 
