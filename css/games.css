@@ -2,20 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Libre Baskerville', serif;
+  font-family: chalkboard_seregular;
 }
 
-/* body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
 
-.dark-mode {
+/* .dark-mode {
   background-color: black;
   color: white;
-} */
+}  */
 
 html {
   scroll-behavior: smooth;
@@ -39,7 +33,6 @@ nav {
   align-items: center;
   min-height: 9vh;
   background-color: rgba(0, 0, 0, .8);
-  font-family: "Poppins", sans-serif;
   z-index: 3;
 }
 
@@ -167,10 +160,9 @@ nav {
 
 /* games */
 .container {
-  padding-top: 90px;
+  padding-top: 50px;
   margin: 0 auto;
   width: 85%;
-  /* height: 400px; */
   position: relative;
   overflow: hidden;
 }
@@ -192,7 +184,7 @@ nav {
 
 .slide-controls {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
   transform: translateY(-50%);
   width: 100%;
@@ -225,8 +217,6 @@ nav {
   color: white;
 }
 
-
-
 /* games */
 
 /* cards */
@@ -241,13 +231,34 @@ nav {
 }
 
 .flex-item {
-  background: rgb(148, 148, 148);
   width: 300px;
   height: 335px;
   margin: 10px;
   text-align: center;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(25px);
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  filter: blur(10px); */
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+}
 
+.flex-item:after{
+  content: '';
+  width: 300px;
+  height: 335px;
+  left: 0px;
+  right: 0;
+  top: 0;  
+  bottom: 0;
+  background: inherit; 
+  position: absolute;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  filter: blur(5px);
+ }
+
+.flex-item .wrap{
+  display: inline-block;
 }
 
 .flex-item img {

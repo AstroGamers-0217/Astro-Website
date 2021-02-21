@@ -76,6 +76,7 @@
     <!-- game cards -->
     <ul class="flex-container">
       <li class="flex-item">
+        <div class="wrap">
         <a href="xblade.html"><img src="images\xblade\bannericon.jpg" alt=""></a><br>
         <a href='https://play.google.com/store/apps/details?id=com.AstroGames.ZigZag&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
           target="_blank">
@@ -83,10 +84,11 @@
             src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
 
         <a href="https://apps.apple.com/us/app/x-blade/id1552705325?itsct=apps_box&amp;itscg=30200"
-          style="display: inline-block; overflow: hidden; border-radius: 13px; width: 155px; height: auto;">
+          style="display: inline-block; overflow: hidden; border-radius: 13px; width: 155px; height: auto;" target="_blank">
           <img
             src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1613433600&h=194d7d360e5fdfe9df5ae7beab267dbf"
             alt="Download on the App Store" style="border-radius: 13px; width: 155px; height: auto;"></a>
+      </div>
       </li>
       <li class="flex-item">
         <a href="tesla.html"><img src="images\tesla\bannericon.jpg" alt=""></a><br><br><br>
@@ -196,6 +198,8 @@
     prevBtn.addEventListener('click', moveToPreviousSlide);
 
     startSlide();
+
+    // navbar
 
     const navSlide = () => {
       const burger = document.querySelector('.burger');

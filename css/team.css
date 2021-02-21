@@ -2,16 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Libre Baskerville', serif;
+  font-family: chalkboard_seregular;
 }
 
-/* body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-
+/*
 .dark-mode {
   background-color: black;
   color: white;
@@ -172,7 +166,7 @@ nav {
   color: white;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-bottom: 15px;
   letter-spacing: 2px;
   margin-right: -2px;
@@ -190,8 +184,8 @@ nav {
 
 .container .card {
   position: relative;
-  width: 505px;
-  height: 259px;
+  width: 512px;
+  height: 275px;
   background: transparent;
   color: white;
   margin: 10px;
@@ -203,7 +197,7 @@ nav {
 }
 
 .container .card .imgBx {
-  max-width: 220px;
+  max-width: 200px;
 }
 
 .container .card .imgBx img {
@@ -213,12 +207,12 @@ nav {
 
 .container .card .content {
   margin-left: 20px;
+  line-height: 40px;
 }
 
-.content h5 {
+/* .content h5 {
   position: relative;
-  margin: 5px;
-}
+} */
 
 .content ul li {
   list-style: none;
@@ -232,27 +226,43 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px){
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 761px) {
   .container {
     flex-direction: column;
     width: 100%;
   }
 
+  .bcontent{
+    padding: 0 1%;
+  }
+
   .container .card {
-    width: 405px;
-    height: 200px;
+    width: 45vh;
+    height: auto;
   }
 
   .container .card .imgBx {
-    max-width: 150px;
+    max-height: 150px;
+    width: auto;
   }
 
   .content {
-    font-size: 70%;
+    font-size: 1.6vh;
+  }
+  .content ul li{
+    padding: auto;
   }
 
-
-
+  .content ul li a{
+    font-size: 2em;
+  }
 }
 
 /* team cards socials */
