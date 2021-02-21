@@ -131,13 +131,13 @@ nav {
 /* center logo */
 .image {
   padding-top: 50px;
-  width: 60%;
+  width: 40%;
   filter: drop-shadow(5px 5px 8px rgb(179, 179, 179));
 }
 
 @media (max-width: 1150px) {
   .image {
-    width: 90%;
+    width: 60%;
   }
 }
 
