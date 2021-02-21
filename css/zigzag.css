@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Libre Baskerville', serif;
+  font-family: chalkboard_seregular;
 }
 
 html {
@@ -157,7 +157,7 @@ nav {
 /* banner */
 
 .banner img {
-  height: 32vw;
+  height: 30vw;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 20px;
 }
@@ -258,13 +258,22 @@ h1 {
   width: 120px;
 }
 
-.youtube {
+.container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-.youtube iframe {
-  height: 75vh;
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
+  height: 100%;
 }
 
 /* REMOVE THIS */
