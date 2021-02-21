@@ -59,6 +59,7 @@ body {
 .preload h3 {
     position: absolute;
     top: 75%;
+    width: 150px;
     overflow: visible;
     transform: translateY(-75%);
     color: rgb(255, 255, 255);
