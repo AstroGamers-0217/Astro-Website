@@ -39,12 +39,8 @@
 
 .footer-content-single {
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: black;
   line-height: 100px;
-  transition: 500ms;
 }
 
 .footer-content-single a {
