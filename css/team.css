@@ -381,7 +381,7 @@ nav {
 }
 
 .our-team .social li {
-  display: inline-block
+  display: inline-block;
 }
 
 .our-team .social li a {
@@ -390,6 +390,7 @@ nav {
   font-size: 18px;
   color: #fff;
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 
 .our-team .social li a:hover {
