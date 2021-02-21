@@ -23,6 +23,86 @@ body {
   background-color: #2F2F2F;
 }
 
+.preload {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  background: #2F2F2F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.preload img {
+  height: 200px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.preload img:hover {
+  transform: scale(1.4);
+}
+
+.preload h3 {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+/* loading dots */
+
+.preload h3:after {
+  content: '.';
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow:
+      .25em 0 0 rgba(0, 0, 0, 0),
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0, 0, 0, 0),
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  80%,
+  100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+  }
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 /* ---------------- Nav Bar ------------------------- */
 
 nav {
@@ -156,6 +236,39 @@ nav {
   padding-top: 70px;
 }
 
+/*---------------- Contact Body ---------------------*/
+.contactbody {
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 100px;
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow:
+    0 2.6px 1.6px rgba(0, 0, 0, 0.052),
+    0 5.4px 3.9px rgba(0, 0, 0, 0.081),
+    0 8.6px 7.3px rgba(0, 0, 0, 0.103),
+    0 13px 13px rgba(0, 0, 0, 0.126),
+    0 20.7px 24.2px rgba(0, 0, 0, 0.152),
+    0 43px 58px rgba(0, 0, 0, 0.21);
+
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ */
+}
+
+.contactbody a {
+  text-decoration: none underline;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------*/
+
+
 /* MENU BLACK */
 .black {
   background: rgba(0, 0, 0, 0.5);
@@ -175,7 +288,6 @@ footer {
   font-family: "open Sans";
   padding-top: 4px;
   color: white;
-
 }
 
 /* social icons */
