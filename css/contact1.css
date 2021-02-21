@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: chalkboard_seregular;
+  /* font-family: chalkboard_seregular; */
+  font-family: 'Mulish', sans-serif;
 }
 
 /* .dark-mode {
@@ -158,6 +159,7 @@ nav {
 .black {
   background: rgba(0, 0, 0, 0.5);
 }
+
 /* -------- contact ----- */
 
 /* ---- footer SECTION ----- */

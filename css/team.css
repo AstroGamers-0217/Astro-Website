@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: chalkboard_seregular;
+  /* font-family: 'Varela Round', sans-serif; */
+  font-family: 'Mulish', sans-serif;
 }
 
 /*
@@ -20,7 +21,9 @@ html {
 body {
   background-image: url('luke-chesser-CxBx_J3yp9g-unsplash.jpg');
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #2F2F2F;
 }
 
 /* ---------------- Nav Bar ------------------------- */
@@ -339,7 +342,7 @@ nav {
 }
 
 .team-cnt .title {
-  line-height: 27px;
+  line-height: 25px;
   font-size: 20px;
   font-weight: 800;
   color: #4e5052;
@@ -373,6 +376,7 @@ nav {
 
 .team-cnt .interests {
   color: #696969;
+  line-height: 25px;
 }
 
 .our-team:hover .social {
