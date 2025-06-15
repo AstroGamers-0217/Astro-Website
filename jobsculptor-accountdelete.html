@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TS34XPT');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Logo.png" type="image/gif" sizes="20x20">
+    <title>Delete JobSculptor Account</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href=".\css\contact1.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/commonstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Mulish&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js\app.js"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS34XPT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!------------------------- Loading ------------------------->
+
+    <div class="preload">
+        <img src="images/Loadingimg.gif" alt="Astro">
+        <h3>Loading</h3>
+    </div>
+
+    <!----------------------------------------------------------->
+    <!------------------- nav bar ----------------------->
+    <nav>
+        <div class="logotitle">
+            <a href="index"><img src="images/Name.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="games">Our Games</a>
+            </li>
+            <li>
+                <a href="team">Our Team</a>
+            </li>
+            <li>
+                <a href="contact">Contact Us</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!------------------- nav bar ----------------------->
+    <!-- BODY -->
+    <span style="display:block; height: 5px;"></span>
+    <div class="bcontent">
+        <!----------------------- Delete Account body --------------------------------->
+        <div class="contactbody">
+            <center>
+                <h1><u>Delete your JobSculptor account</u></h1>
+            </center><br>
+            <center>
+                To delete your JobSculptor account, you have two options:<br><br>
+                1. Using the JobSculptor app:<br>
+                • Open the JobSculptor app<br>
+                • Go to Profile tab<br>
+                • Navigate to Settings<br>
+                • Select Delete Account<br><br>
+                2. If you no longer have access to the app, email us at:<br><br>
+                <a href="mailto:jobsculptor@astro.org.in">jobsculptor@astro.org.in</a><br><br>
+                <strong>Important:</strong> Make sure to send your deletion request from the same email address that you used to create your JobSculptor account. Requests from unverified email addresses will not be processed.<br><br>
+                We'll process your account deletion request within 24-48 hours.<br>
+            </center>
+        </div>
+        <!------------------------------------------------------------------------->
+    </div>
+    <span style="display:block; height: 70px;"></span>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/astrogamers0217/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/Astro__0217?s=09" target="_blank" rel="noopener noreferrer"><i
+                            class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCymq5LdbMojVTLw8qLUs9Ug"><i
+                            class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://instagram.com/astrogamers0217?igshid=zr2phyiy6xlu" target="_blank"
+                        rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 Astro</p>
+        </div>
+    </footer>
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            //Toggle Now
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                //Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+                //Burger Animation
+                burger.classList.toggle("toggle");
+            });
+        }
+        navSlide();
+    </script>
+</body>
+
+</html> 
