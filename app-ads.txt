@@ -1,0 +1,11 @@
+# app-ads.txt for Astro Gamers
+# This file should be hosted at the root of your website domain
+# Format: <EXCHANGE_DOMAIN>, <SELLER_ACCOUNT_ID>, <PAYMENT_TYPE>, <TAG_ID>
+# 
+# EXCHANGE_DOMAIN: The canonical domain name of the advertising exchange
+# SELLER_ACCOUNT_ID: The identifier associated with the seller or reseller account
+# PAYMENT_TYPE: An enumeration of the payment settlement type (DIRECT or RESELLER)
+# TAG_ID: An ID that uniquely identifies the advertising exchange (optional)
+
+# Google AdMob entries will be added below
+google.com, pub-5612701838281021, DIRECT, f08c47fec0942fa0
